@@ -4,9 +4,9 @@
   "description": "Temperature Converter Rest",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "test": "jest"
   },
   "author": "Alejandro Pizarro",
   "license": "ISC",
