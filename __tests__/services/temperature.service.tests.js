@@ -25,4 +25,16 @@ describe("TemperatureUtil unit tests", () => {
         // THEN
         expect(actualOutput).toStrictEqual(expectedOutput);
       });
+
+      test('Given Temperature 68F When convert to Fabrenheit Then 68F', () => {
+        // GIVEN
+        let input = new TemperatureVO(68, "FAHRENHEIT");
+        let expectedOutput = new TemperatureVO(68, "FAHRENHEIT");
+  
+        // WHEN
+        let actualOutput = temperatureService.convert(input, "FAHRENHEIT");
+  
+        // THEN
+        expect(actualOutput).toStrictEqual(expectedOutput);
+      });
 });
